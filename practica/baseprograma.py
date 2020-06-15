@@ -19,7 +19,7 @@ def crearTabla():
 
 def nuevoDato(nombre, passw, apellido, comentarios):
     miCursor.execute("""INSERT INTO DATOS_USUARIOS VALUES (
-    NULL, {}, {}, {}, {})""".format(nombre, passw, apellido, comentarios))
+    NULL, '{}', '{}', '{}', '{}')""".format(nombre, passw, apellido, comentarios))
 
 
 def editarDato():
