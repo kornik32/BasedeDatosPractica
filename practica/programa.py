@@ -50,6 +50,7 @@ class baseDatos:
 
             self.miConexion.commit()
             messagebox.showinfo("Actualizado", "Datos actualizados.")
+            return borrarTodo()
         except sqlite3.OperationalError:
             messagebox.showwarning("Error", "Ingresa un número de Id o conecta la base de datos en el menu BBDD.")
 
